@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+
+/* GENERAL */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 300 1.25rem 'Libre Franklin';
+    color: var(--Very-Dark-Blue);
+    text-align: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 5em auto;
+    padding: 0 1em 2em;
+}
+
+img { max-width: 100%; }
+
+p { margin: 1em 0; }
+
+
+/* MAIN */
+
+.header { margin: 3em 0 2.5em; }
+
+h1 {
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.bold {
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+
+input {
+    display: block;
+    padding: .7em 2em;
+    margin: 0 auto;
+    width: 100%;
+    font: 300 1.25rem 'Libre Franklin';
+    border-radius: 100px;
+    outline: 0;
+}
+
+input::placeholder { color: var(--Pale-Blue); }
+
+#email {
+    border: 1px solid var(--Pale-Blue);
+    color: var(--Pale-Blue);
+    margin-bottom: .5em;
+}
+
+#submit {
+    border: 0;
+    background: var(--Blue);
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 5px 5px var(--Pale-Blue);
+}
+
+#submit:hover {
+    background: hsla(223, 87%, 63%, .5);
+    transition: background ease .5s;
+}
+
+.main-figure {
+    margin: 5em 0 0;
+    animation: scale ease 2s;
+}
+
+.slide-in-top { animation: slide-in-top ease 2s; }
+
+
+/* FOOTER */
+
+footer .container {
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Blue);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-link {
+    font-size: 2rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: .3em;
+}
+
+.icon-link + .icon-link { margin-left: .5em; }
+
+.icon-link:hover {
+    background: var(--Blue);
+    color: hsl(0, 0%, 100%);
+    border-radius: 100px;
+    transition: background ease .5s;
+}
+
+.copyright { margin: 3em 0 0; }
+
+.developers, .copyright { font-size: 0.8125rem; }
+
+.developer { font-weight: 700; }
+
+
+/* DOM */
+
+.error {
+    color: red;
+    font: italic 0.8125rem 'Libre Franklin';
+    margin: .5em 0 1em;
+    text-align: left;
+}

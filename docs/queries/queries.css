@@ -1,0 +1,48 @@
+@keyframes slide-in-top {
+    
+    0% { transform: translateY(-500%); }
+
+}
+
+@keyframes scale {
+    
+    0% { transform: scale(0); }
+    
+    100% { transform: scale(1); }
+
+}
+
+
+@media(max-width: 197px) {
+
+    body, input {
+        font-size: 1rem;
+    }
+
+    h1 { font-size: 1.25rem; }
+
+    .container {
+        padding: 1em .5em;
+    }
+
+}
+
+
+@media(min-width: 701px) {
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #email {
+        width: 60%;
+        margin-bottom: 0;
+    }
+    
+    #submit { width: 35%; }
+
+    .error { margin: .5em 0 2em 4em; }
+
+}
