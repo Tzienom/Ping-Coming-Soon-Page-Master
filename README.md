@@ -35,8 +35,8 @@ Users should be able to:
 ![Code Screenshot](./screenshot/code3.png)
 
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution here](https://www.frontendmentor.io/solutions/ping-coming-soon-page-master-CEoWDAv6sD)
+- Live Site URL: [Live Site here](https://tzienom.github.io/Ping-Coming-Soon-Page-Master/)
 
 ## My process
 
